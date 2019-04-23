@@ -25,3 +25,7 @@ NVSS set images are looks like:
 FR I: ![a](/media/nvss/FR1/1_CoNFIG_FR1_.png) ![b](/media/nvss/FR1/1_FRICAT_FR1_.png) ![c](/media/nvss/FR1/2_FRICAT_FR1_.png) ![d](/media/nvss/FR1/2_CoNFIG_FR1_.png)
 
 FR II: ![a](/media/nvss/FR2/53_CoNFIG_FR2.png) ![b](/media/nvss/FR2/54_CoNFIG_FR2.png) ![c](/media/nvss/FR2/55_CoNFIG_FR2.png) ![d](/media/nvss/FR2/56_CoNFIG_FR2.png)
+
+FIRST set images, on the other hand, are like:
+
+FR I: ![a](/media/first/FR1/2_CoNFIG_FR1.png) ![b](/media/first/FR1/2_FRICAT_FR1.png) ![c](/media/first/FR1/3_FRICAT_FR1.png) ![d](/media/first/FR1/3_CoNFIG_FR1.png)
