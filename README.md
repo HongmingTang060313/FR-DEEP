@@ -20,3 +20,6 @@ The dataset is divided by 11 training batches and 1 testing batch. Each batch ha
 
 This is an *imbalance dataset*
 
+NVSS set images are looks like:
+
+FR I: ![a](/media/nvss/FR1/1_CoNFIG_FR1_.png) 
