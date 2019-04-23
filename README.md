@@ -22,4 +22,4 @@ This is an *imbalance dataset*
 
 NVSS set images are looks like:
 
-FR I: ![a](/media/nvss/FR1/1_CoNFIG_FR1_.png) ![b](/media/nvss/FR1/1_FRICAT_FR1_.png)
+FR I: ![a](/media/nvss/FR1/1_CoNFIG_FR1_.png) ![b](/media/nvss/FR1/1_FRICAT_FR1_.png) ![c](/media/nvss/FR1/2_FRICAT_FR1_.png)![d](/media/nvss/FR1/2_CoNFIG_FR1_.png)
