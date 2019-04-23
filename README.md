@@ -50,7 +50,7 @@ import torchvision.transforms as transforms
 Then import the HTRU1 class:
 
 ```python
-from htru1 import HTRU1
+from htru2 import HTRU1
 ```
 
 Define the transform:
