@@ -35,3 +35,66 @@ FIRST set images, on the other hand, are like:
 FR I: ![a](/media/first/FR1/2_CoNFIG_FR1.png) ![b](/media/first/FR1/2_FRICAT_FR1.png) ![c](/media/first/FR1/3_FRICAT_FR1.png) ![d](/media/first/FR1/3_CoNFIG_FR1.png)
 
 FR II: ![a](/media/first/FR2/11_CoNFIG_FR2.png) ![b](/media/first/FR2/12_CoNFIG_FR2.png) ![c](/media/first/FR2/13_CoNFIG_FR2.png) ![d](/media/first/FR2/14_CoNFIG_FR2.png)
+
+## Using the Dataset in PyTorch
+
+The [htru2.py] and [htru3.py] file contains an instance of the [torchvision Dataset()](https://pytorch.org/docs/stable/torchvision/datasets.html) for the FR DEEP Batched Dataset. 
+
+To use it with PyTorch in Python, first import the torchvision datasets and transforms libraries:
+
+```python
+from torchvision import datasets
+import torchvision.transforms as transforms
+```
+
+Then import the HTRU1 class:
+
+```python
+from htru1 import HTRU1
+```
+
+Define the transform:
+
+```python
+# convert data to a normalized torch.FloatTensor
+transform = transforms.Compose(
+    [transforms.Lambda(lambda x: select_channel(x,0,'grey')), # 'RGB' in the context of htru1
+     transforms.ToTensor(),
+     transforms.Normalize([0.5],[0.5])])
+ ```
+
+Read the HTRU1 dataset from '/NVSS_data':
+
+```python
+# choose the training and test datasets
+train_data = HTRU1('/NVSS_data', train=True, download=False, transform=transform)
+test_data = HTRU1('/NVSS_data', train=False, download=False, transform=transform)
+```
+
+### Using Individual Channels in PyTorch
+
+If you want to use only one of the "channels" in the HTRU1 Batched Dataset, you can extract it using the torchvision generic transform [transforms.Lambda](https://pytorch.org/docs/stable/torchvision/transforms.html#generic-transforms). 
+
+This function extracts a specific channel ("c") and writes the image of that channel out as a greyscale PIL Image:
+
+```python
+def select_channel(x,c,color=None):
+    
+    from PIL import Image
+    
+    np_img = np.array(x, dtype=np.uint8)
+    if color=='RGB':
+        ch_img = np_img[:,:,c]
+    elif color=='grey':
+        ch_img = np_img
+    img = Image.fromarray(ch_img,'L')
+    return img
+ ```
+ 
+### Jupyter Notebooks
+
+An example of classification using the HTRU1 class in PyTorch is provided as a Jupyter notebook [extracting an individual channel as a greyscale image](https://github.com/as595/HTRU1/blob/master/htru1_tutorial_channel.ipynb).
+
+
+
+
