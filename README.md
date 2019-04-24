@@ -12,7 +12,7 @@ The [FR-DEEP Batched Dataset]() is comprised of two separate sub-datasets: FRDEE
 
 There are 550 training images, and 50 test images. The FR-DEEP dataset is inspired by [CIFAR-10 Dataset](http://www.cs.toronto.edu/~kriz/cifar.html).
 
-The dataset is divided into 11 training batches and 1 test batch. Each batch contains 50 images. In total the dataset contains 264 FR I objects and 336 FR II objects. In each batch there are 22 FR I and 34 FR II images, organized in random order.
+The dataset is divided into 11 training batches and 1 test batch. Each batch contains 50 images. In total the dataset contains 264 FR I objects and 336 FR II objects. In each batch there are 22 FR I and 28 FR II images, organized in random order.
 
 This is an *imbalanced dataset*
 
