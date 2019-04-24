@@ -10,7 +10,8 @@ The [FR-DEEP Batched Dataset]() is a dataset of labeled radio galaxies suitable 
 
 The [FR-DEEP Batched Dataset]() is comprised of two separate sub-datasets: FRDEEP-N and FRDEEP-F. The two subsets provide images of the same objects taken from (1) the [NVSS survey](https://www.cv.nrao.edu/nvss/) and (2) the [FIRST survey](https://www.cv.nrao.edu/first/). Each subset contains 600 150x150 images in two classes: FR I & FR II. Images were extracted from the [Skyview Virtual Observatory](https://skyview.gsfc.nasa.gov/current/cgi/titlepage.pl), and underwent pre-processing descibed in [(1)](#paper).
 
-There are 550 training images, and 50 test images. The FR-DEEP dataset is inspired by [CIFAR-10 Dataset](http://www.cs.toronto.edu/~kriz/cifar.html).
+There are 550 training images, and 50 test images. The FR-DEEP dataset is inspired by [CIFAR-10 Dataset](http://www.cs.toronto.edu/~kriz/cifar.html) and [HTRU1 Dataset](
+https://raw.githubusercontent.com/as595/HTRU1/master/htru1.py).
 
 The dataset is divided into 11 training batches and 1 test batch. Each batch contains 50 images. In total the dataset contains 264 FR I objects and 336 FR II objects. In each batch there are 22 FR I and 28 FR II images, organized in random order.
 
@@ -30,7 +31,7 @@ FR II: ![a](/media/first/FR2/11_CoNFIG_FR2.png) ![b](/media/first/FR2/12_CoNFIG_
 
 ## Using the Dataset in PyTorch
 
-The [htru2.py] and [htru3.py] file contains an instance of the [torchvision Dataset()](https://pytorch.org/docs/stable/torchvision/datasets.html) for the FR DEEP Batched Dataset. 
+The [FRDEEP.py] file contains an instance of the [torchvision Dataset()](https://pytorch.org/docs/stable/torchvision/datasets.html) for the FRDEEP Batched Dataset. 
 
 To use it with PyTorch in Python, first import the torchvision datasets and transforms libraries:
 
@@ -39,10 +40,10 @@ from torchvision import datasets
 import torchvision.transforms as transforms
 ```
 
-Then import the HTRU1 class:
+Then import the FRDEEPN class:
 
 ```python
-from htru2 import HTRU1
+from FRDEEP import FRDEEPN
 ```
 
 Define the transform:
@@ -85,7 +86,7 @@ def select_channel(x,c,color=None):
  
 ### Jupyter Notebooks
 
-An example of classification using the HTRU1 class in PyTorch is provided as a Jupyter notebook [extracting an individual channel as a greyscale image](https://github.com/as595/HTRU1/blob/master/htru1_tutorial_channel.ipynb).
+An example of classification using the FRDEEPN class in PyTorch is provided as a Jupyter notebook [extracting an individual channel as a greyscale image](https://github.com/HongmingTang060313/FR-DEEP/blob/master/FRDEEP_tutorial_channel.ipynb).
 
 
 
