@@ -56,33 +56,14 @@ transform = transforms.Compose(
      transforms.Normalize([0.5],[0.5])])
  ```
 
-Read the HTRU1 dataset from '/NVSS_data':
+Read the FRDEEPN dataset from '/NVSS_data':
 
 ```python
 # choose the training and test datasets
-train_data = HTRU1('/NVSS_data', train=True, download=False, transform=transform)
-test_data = HTRU1('/NVSS_data', train=False, download=False, transform=transform)
+train_data = FRDEEPN('/NVSS_data', train=True, download=False, transform=transform)
+test_data = FRDEEPN('/NVSS_data', train=False, download=False, transform=transform)
 ```
 
-### Using Individual Channels in PyTorch
-
-If you want to use only one of the "channels" in the HTRU1 Batched Dataset, you can extract it using the torchvision generic transform [transforms.Lambda](https://pytorch.org/docs/stable/torchvision/transforms.html#generic-transforms). 
-
-This function extracts a specific channel ("c") and writes the image of that channel out as a greyscale PIL Image:
-
-```python
-def select_channel(x,c,color=None):
-    
-    from PIL import Image
-    
-    np_img = np.array(x, dtype=np.uint8)
-    if color=='RGB':
-        ch_img = np_img[:,:,c]
-    elif color=='grey':
-        ch_img = np_img
-    img = Image.fromarray(ch_img,'L')
-    return img
- ```
  
 ### Jupyter Notebooks
 
