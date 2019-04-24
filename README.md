@@ -51,8 +51,7 @@ Define the transform:
 ```python
 # convert data to a normalized torch.FloatTensor
 transform = transforms.Compose(
-    [transforms.Lambda(lambda x: select_channel(x,0,'grey')), # 'RGB' in the context of htru1
-     transforms.ToTensor(),
+    [transforms.ToTensor(),
      transforms.Normalize([0.5],[0.5])])
  ```
 
