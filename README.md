@@ -1,10 +1,12 @@
-**this is still under construction, please be aware of this**
+# FR-DEEP
+
+**This site is still underconstruction - data are not yet ready for use**
 
 FR-DEEP is a dataset of labeled radio galaxies suitable for use with deep learning algorithms.  The labels for the samples are compiled from the [FRICAT](https://arxiv.org/abs/1610.09376) and [CoNFIG](https://academic.oup.com/mnras/article/390/2/819/1032320) catalogs. Each sample is classified as either an FR I or FR II radio galaxy. This dataset forms the base training data for the paper *Transfer Learning for Radio Galaxy Classification*. If you use this dataset please cite:
 
 *Transfer learning for radio galaxy classification*, Tang H., Scaife A. M. M., Leahy J. P., 2019, [arXiv:1903.11921](https://arxiv.org/abs/1903.11921)  
 
-# The FR DEEP Batched Dataset
+## The FR-DEEP Batched Dataset
 
 The FR DEEP batched dataset comprises two separate sub-datasets: NVSS set and FIRST set. The two sub sets adopted same objects from the two aforementioned catalogs. Each sub set contains 600 150 x 150 images in two class: FR I and FR II(264 FR I and 336 FR II objects). Sample images are downloaded via Skyview Virtual Observatory, and experienced:
 
