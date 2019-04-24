@@ -8,7 +8,7 @@ The [FR-DEEP Batched Dataset]() is a dataset of labeled radio galaxies suitable 
 
 ## The FR-DEEP Batched Dataset
 
-The [FR-DEEP Batched Dataset]() is comprised of two separate sub-datasets: [NVSS](https://www.cv.nrao.edu/nvss/) and [FIRST](https://www.cv.nrao.edu/first/). The two subsets provide images of the same objects taken from the two different catalogs. Each subset contains 600 150x150 images in two classes: FR I & FR II. Images were taken from the [Skyview Virtual Observatory](https://skyview.gsfc.nasa.gov/current/cgi/titlepage.pl), and underwent pre-processing descibed in [(1)](#paper).
+The [FR-DEEP Batched Dataset]() is comprised of two separate sub-datasets: FRDEEP1 and FRDEEP2. The two subsets provide images of the same objects taken from (1) the [NVSS survey](https://www.cv.nrao.edu/nvss/) and (2) the [FIRST survey](https://www.cv.nrao.edu/first/). Each subset contains 600 150x150 images in two classes: FR I & FR II. Images were extracted from the [Skyview Virtual Observatory](https://skyview.gsfc.nasa.gov/current/cgi/titlepage.pl), and underwent pre-processing descibed in [(1)](#paper).
 
 There are 550 training images, and 50 test images. The FR-DEEP dataset is inspired by [CIFAR-10 Dataset](http://www.cs.toronto.edu/~kriz/cifar.html).
 
