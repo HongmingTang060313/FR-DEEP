@@ -8,7 +8,7 @@ The [FR-DEEP Batched Dataset]() is a dataset of labeled radio galaxies suitable 
 
 ## The FR-DEEP Batched Dataset
 
-The FR DEEP batched dataset comprises two separate sub-datasets: NVSS set and FIRST set. The two sub sets adopted same objects from the two aforementioned catalogs. Each sub set contains 600 150 x 150 images in two class: FR I and FR II(264 FR I and 336 FR II objects). Sample images are downloaded via Skyview Virtual Observatory, and experienced:
+The [FR-DEEP Batched Dataset]() is comprised of two separate sub-datasets: [NVSS](https://www.cv.nrao.edu/nvss/) and [FIRST](https://www.cv.nrao.edu/first/). The two subsets provide images of the same objects taken from the two different catalogs. Each subset contains 600 150x150 images in two classes: FR I & FR II. Images were taken from the [Skyview Virtual Observatory](https://skyview.gsfc.nasa.gov/current/cgi/titlepage.pl), and experienced:
 
 (1) sigma-clipping 
 
@@ -19,9 +19,9 @@ The FR DEEP batched dataset comprises two separate sub-datasets: NVSS set and FI
 
 There are 550 training images, and 50 test images. The FR DEEP dataset is inspired by [CIFAR-10 Dataset](http://www.cs.toronto.edu/~kriz/cifar.html).
 
-The dataset is divided by 11 training batches and 1 testing batch. Each batch has 50 images. In every batch, 22 FR I and 34 FR II objects images are organized in random order.
+The dataset is divided into 11 training batches and 1 test batch. Each batch contains 50 images. In total the dataset contains 264 FR I objects and 336 FR II objects. In each batch there are 22 FR I and 34 FR II images, organized in random order.
 
-This is an *imbalance dataset*
+This is an *imbalanced dataset*
 
 NVSS set images are looks like:
 
