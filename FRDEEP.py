@@ -103,7 +103,6 @@ class FRDEEPN(data.Dataset):
 
         self.data = np.vstack(self.data).reshape(-1, 1, 150, 150)
         self.data = self.data.transpose((0, 2, 3, 1))
-        print(np.shape(self.data))
 
         self._load_meta()
 
@@ -272,7 +271,6 @@ class FRDEEPF(data.Dataset):
 
         self.data = np.vstack(self.data).reshape(-1, 1, 150, 150)
         self.data = self.data.transpose((0, 2, 3, 1))
-        print(np.shape(self.data))
 
         self._load_meta()
 
