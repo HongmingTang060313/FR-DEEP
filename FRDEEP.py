@@ -34,8 +34,7 @@ class FRDEEPN(data.Dataset):
     """
 
     base_folder = 'NVSS_PNG_dataset'
-    # This url is out of dated for our work, the rest are start-of-the-art version.
-    url = "http://www.jb.man.ac.uk/research/ascaife/htru1-batches-py.tar.gz"
+    url = "https://github.com/HongmingTang060313/FR-DEEP/blob/master/NVSS_data/NVSS_PNG_dataset.tar.gz"
     filename = "NVSS_PNG_dataset.tar.gz"
     tgz_md5 = '2584ed1e174ea71f581d0e0d6f32ef38'
     train_list = [
@@ -202,8 +201,7 @@ class FRDEEPF(data.Dataset):
     """
 
     base_folder = 'FIRST_PNG_dataset'
-    # This url is out of dated for our work, the rest are start-of-the-art version.
-    url = "https://github.com/HongmingTang060313/FR-DEEP/tree/master/FIRST_data/FIRST_PNG_dataset.tar.gz"
+    url = "https://github.com/HongmingTang060313/FR-DEEP/blob/master/FIRST_data/FIRST_PNG_dataset.tar.gz"
     filename = "FIRST_PNG_dataset.tar.gz"
     tgz_md5 = '2f39461e6c62fb45289559915106013a'
     train_list = [
