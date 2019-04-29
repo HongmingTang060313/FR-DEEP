@@ -13,7 +13,7 @@ The **FR-DEEP Batched Dataset** is a dataset of labeled radio galaxies suitable 
 
 The [FR-DEEP Batched Dataset]() is comprised of two separate sub-datasets: [FRDEEP-N](http://www.jb.man.ac.uk/research/ascaife/NVSS_PNG_dataset.tar.gz) and [FRDEEP-F](http://www.jb.man.ac.uk/research/ascaife/NVSS_PNG_dataset.tar.gz). The two subsets provide images of the same objects taken from (1) the [NVSS survey](https://www.cv.nrao.edu/nvss/) and (2) the [FIRST survey](https://www.cv.nrao.edu/first/). Each subset contains 600 150x150 images in two classes: FR I & FR II. Images were extracted from the [Skyview Virtual Observatory](https://skyview.gsfc.nasa.gov/current/cgi/titlepage.pl), and underwent pre-processing described in [(1)](#paper). 
 
-The angular size of the pixels for each dataset is: [FRDEEP-N](http://www.jb.man.ac.uk/research/ascaife/NVSS_PNG_dataset.tar.gz): 15''/pixel; [FRDEEP-F](http://www.jb.man.ac.uk/research/ascaife/NVSS_PNG_dataset.tar.gz): 1.8''/pixel. In the context of angular scaling, an 150 x 150 FIRST image covers the same area of an 18 x 18 NVSS image.
+The angular size of the pixels for each dataset is: [FRDEEP-N](http://www.jb.man.ac.uk/research/ascaife/NVSS_PNG_dataset.tar.gz): 15''/pixel; [FRDEEP-F](http://www.jb.man.ac.uk/research/ascaife/NVSS_PNG_dataset.tar.gz): 1.8''/pixel. In terms of angular scale, this means that a 150 x 150 pixel FIRST image covers the same area as an 18 x 18 pixel NVSS image.
 
 There are 550 training images, and 50 test images. The FR-DEEP dataset is inspired by [CIFAR-10 Dataset](http://www.cs.toronto.edu/~kriz/cifar.html) and [HTRU1 Dataset](https://as595.github.io/HTRU1/).
 
