@@ -71,3 +71,7 @@ test_data = FRDEEPN('/NVSS_data', train=False, download=False, transform=transfo
 ### Jupyter Notebooks
 
 An example of classification using the FRDEEPN class in PyTorch is provided as a Jupyter notebook using the [NVSS dataset](https://github.com/HongmingTang060313/FR-DEEP/blob/master/FRDEEP_tutorial_NVSS.ipynb) or using the [FIRST dataset](https://github.com/HongmingTang060313/FR-DEEP/blob/master/FRDEEP_tutorial_FIRST.ipynb).
+
+These are examples for demonstration only - please don't use them for science!
+
+[![HitCount](http://hits.dwyl.io/HongmingTang060313/FR-DEEP.svg)](http://hits.dwyl.io/HongmingTang060313/FR-DEEP)
