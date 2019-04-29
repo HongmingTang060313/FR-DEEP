@@ -29,6 +29,8 @@ FR II: <img src="media/nvss/FR2/53_CoNFIG_FR2.png" width="100"> <img src="media/
 
 FIRST set images, on the other hand, look like:
 
+<img src="/media/first/FR1/2_CoNFIG_FR1.png" width="100">
+
 FR I: <img src="/media/first/FR1/2_CoNFIG_FR1.png" width="100"> <img src="/media/first/FR1/2_FRICAT_FR1.png" width="100"> <img src="/media/first/FR1/3_FRICAT_FR1.png" width="100"> <img src="/media/first/FR1/3_CoNFIG_FR1.png" width="100"> 
 
 FR II: <img src="/media/first/FR2/11_CoNFIG_FR2.png" width="100"> <img src="/media/first/FR2/12_CoNFIG_FR2.png" width="100"> <img src="/media/first/FR2/13_CoNFIG_FR2.png" width="100"> <img src="/media/first/FR2/14_CoNFIG_FR2.png" width="100"> 
