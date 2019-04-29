@@ -29,9 +29,10 @@ FR II: <img src="media/nvss/FR2/53_CoNFIG_FR2.png" width="125"> <img src="media/
 
 FIRST set images, on the other hand, look like:
 
-FR I: ![a](/media/first/FR1/2_CoNFIG_FR1.png) ![b](/media/first/FR1/2_FRICAT_FR1.png) ![c](/media/first/FR1/3_FRICAT_FR1.png) ![d](/media/first/FR1/3_CoNFIG_FR1.png)
+FR I: <img src="/media/first/FR1/2_CoNFIG_FR1.png" width="125"> <img src="/media/first/FR1/2_FRICAT_FR1.png" width="125"> <img src="/media/first/FR1/3_FRICAT_FR1.png" width="125"> <img src="/media/first/FR1/3_CoNFIG_FR1.png" width="125"> 
 
-FR II: ![a](/media/first/FR2/11_CoNFIG_FR2.png) ![b](/media/first/FR2/12_CoNFIG_FR2.png) ![c](/media/first/FR2/13_CoNFIG_FR2.png) ![d](/media/first/FR2/14_CoNFIG_FR2.png)
+FR II: <img src="/media/first/FR2/11_CoNFIG_FR2.png" width="125"> <img src="/media/first/FR2/12_CoNFIG_FR2.png" width="125"> <img src="/media/first/FR2/13_CoNFIG_FR2.png" width="125"> <img src="/media/first/FR2/14_CoNFIG_FR2.png" width="125"> 
+
 
 ## Using the Dataset in PyTorch
 
