@@ -23,7 +23,7 @@ This is an *imbalanced dataset*
 
 NVSS set images look like:
 
-FR I: ![a](/media/nvss/FR1/1_CoNFIG_FR1_.png){ width=50% } ![b](/media/nvss/FR1/1_FRICAT_FR1_.png){ width=50% } ![c](/media/nvss/FR1/2_FRICAT_FR1_.png{ width=50% } ![d](/media/nvss/FR1/2_CoNFIG_FR1_.png){ width=50% }
+FR I: ![a](/media/nvss/FR1/1_CoNFIG_FR1_.png=250x) ![b](/media/nvss/FR1/1_FRICAT_FR1_.png=250x) ![c](/media/nvss/FR1/2_FRICAT_FR1_.png=250x) ![d](/media/nvss/FR1/2_CoNFIG_FR1_.png=250x)
 
 FR II: ![a](/media/nvss/FR2/53_CoNFIG_FR2.png) ![b](/media/nvss/FR2/54_CoNFIG_FR2.png) ![c](/media/nvss/FR2/55_CoNFIG_FR2.png) ![d](/media/nvss/FR2/56_CoNFIG_FR2.png)
 
