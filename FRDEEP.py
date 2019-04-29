@@ -15,7 +15,7 @@ from torchvision.datasets.utils import download_url, check_integrity
 
 class FRDEEPN(data.Dataset):
     """`FRDEEP-N <https://github.com/HongmingTang060313/FR-DEEP/>`_Dataset
-    
+
     Inspired by `HTRU1 <https://as595.github.io/HTRU1/>`_ Dataset.
 
     Args:
@@ -34,7 +34,7 @@ class FRDEEPN(data.Dataset):
     """
 
     base_folder = 'NVSS_PNG_dataset'
-    url = "https://github.com/HongmingTang060313/FR-DEEP/blob/master/NVSS_data/NVSS_PNG_dataset.tar.gz"
+    url = "http://www.jb.man.ac.uk/research/ascaife/NVSS_PNG_dataset.tar.gz"
     filename = "NVSS_PNG_dataset.tar.gz"
     tgz_md5 = '2584ed1e174ea71f581d0e0d6f32ef38'
     train_list = [
@@ -93,7 +93,7 @@ class FRDEEPN(data.Dataset):
                     entry = pickle.load(f)
                 else:
                     entry = pickle.load(f, encoding='latin1')
-                    
+
                 self.data.append(entry['data'])
                 if 'labels' in entry:
                     self.targets.extend(entry['labels'])
@@ -182,7 +182,7 @@ class FRDEEPN(data.Dataset):
 
 class FRDEEPF(data.Dataset):
     """`FRDEEP-F <https://github.com/HongmingTang060313/FR-DEEP/>`_Dataset
-    
+
     Inspired by `HTRU1 <https://as595.github.io/HTRU1/>`_ Dataset.
 
     Args:
@@ -201,7 +201,7 @@ class FRDEEPF(data.Dataset):
     """
 
     base_folder = 'FIRST_PNG_dataset'
-    url = "https://github.com/HongmingTang060313/FR-DEEP/blob/master/FIRST_data/FIRST_PNG_dataset.tar.gz"
+    url = "http://www.jb.man.ac.uk/research/ascaife/FIRST_PNG_dataset.tar.gz"
     filename = "FIRST_PNG_dataset.tar.gz"
     tgz_md5 = '2f39461e6c62fb45289559915106013a'
     train_list = [
@@ -260,7 +260,7 @@ class FRDEEPF(data.Dataset):
                     entry = pickle.load(f)
                 else:
                     entry = pickle.load(f, encoding='latin1')
-                    
+
                 self.data.append(entry['data'])
                 if 'labels' in entry:
                     self.targets.extend(entry['labels'])
@@ -344,4 +344,3 @@ class FRDEEPF(data.Dataset):
         tmp = '    Target Transforms (if any): '
         fmt_str += '{0}{1}'.format(tmp, self.target_transform.__repr__().replace('\n', '\n' + ' ' * len(tmp)))
         return fmt_str
-
