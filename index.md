@@ -37,7 +37,7 @@ FR II: ![a](/media/first/FR2/11_CoNFIG_FR2.png) ![b](/media/first/FR2/12_CoNFIG_
 
 ## Using the Dataset in PyTorch
 
-The [FRDEEP.py] file contains an instance of the [torchvision Dataset()](https://pytorch.org/docs/stable/torchvision/datasets.html) for the FRDEEP Batched Dataset. 
+The [FRDEEP.py](https://raw.githubusercontent.com/HongmingTang060313/FR-DEEP/master/FRDEEP.py) file contains an instance of the [torchvision Dataset()](https://pytorch.org/docs/stable/torchvision/datasets.html) for the FRDEEP Batched Dataset. 
 
 To use it with PyTorch in Python, first import the torchvision datasets and transforms libraries:
 
